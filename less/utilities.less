@@ -1,0 +1,44 @@
+.make-column(@xsmall, @small,@medium, @large) {
+  .make-xs-column(@xsmall);
+  .make-sm-column(@small);
+  .make-md-column(@medium);
+  .make-lg-column(@large);
+}
+
+@grid-gutter-width: 0px;
+
+@keyframes slideInLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0
+  }
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

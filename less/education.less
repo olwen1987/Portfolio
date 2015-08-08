@@ -1,0 +1,45 @@
+#education-section {
+  .clearfix;
+  animation: fadeIn .4s linear;
+  .section-name {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    font-size:20px;
+  }
+
+  .education-block {
+    cursor: pointer;
+    .make-column(12, 12, 5.73, 5.73);
+    margin: 1%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    &.block-1 {
+      height:50px;
+      .details {
+        visibility:hidden;
+      }
+      &:hover {
+        .details {
+          visibility:visible;
+        }
+      }
+    }
+    &.block-2 {
+      height:50px;
+      .details {
+        visibility:hidden;
+      }
+      &:hover {
+        .details {
+          visibility:visible;
+        }
+      }
+    }
+  }
+}

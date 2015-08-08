@@ -1,0 +1,44 @@
+#skills-section {
+  .clearfix;
+  animation: fadeIn .4s linear;
+  .section-name {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    font-size:20px;
+  }
+  .skills-panel {
+    margin-top: 10px;
+    .skills-items {
+      cursor: pointer;
+      .make-column(6, 6, 4, 3);
+      height: 250px;
+      .skills-icon {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin: 0 auto;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+        img {
+          width: 150px;
+          height: 150px;
+          padding: 20%;
+        }
+        &:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.24);
+        }
+      }
+      .skill-name {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}
